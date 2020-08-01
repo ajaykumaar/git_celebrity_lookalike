@@ -1,0 +1,166 @@
+{%load static%}
+{%static "images" as baseUrl%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Celebrity Lookalike</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/lightgallery.min.css' %}">    
+    
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+  </head>
+  <body>
+  
+
+    
+
+
+
+    <header class="site-navbar py-3" role="banner">
+
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          
+
+          <div class="col-7 col-xl-5" data-aos="fade-down">
+            <h1 class="mb-0"><a href="index.html" class="text-black h2 mb-0">Celebrity lookalike</a></h1>
+          </div>
+          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
+            <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
+                              
+            </nav>
+          </div>
+          <div class="col-7 col-xl-5" data-aos="fade-down">
+            <h1 class="mb-0"><a href="index.html" class="text-blah h4 mb-0" style="color:rgb(3, 93, 105)">You are {{match_name}}'s look-alike!</a></h1>
+            <h1 class="mb-0"><a href="index.html" class="text-blah h4 mb-0" style="color: rgb(1, 1, 32) ">Percent match: {{match_p}}</a></h1>
+          </div>
+          
+
+ 
+
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+    
+    
+    
+      
+   
+       
+            
+      
+
+    
+
+
+  <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+    <div class="swiper-container images-carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrap">
+                <div class="image-info">
+                    
+                    <h2 class="mb-3">{{match_name}}</h2>
+                                                   
+                   </div>
+                <img src="{{baseUrl}}/{{match_img}}" alt="Image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrap">
+                <div class="image-info">
+                    <h2 class="mb-3">{{match_name}}</h2>
+                  
+                </div>
+                <img src="{{baseUrl}}/{{match_img}}" alt="Image">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrap">
+                <div class="image-info">
+                    <h2 class="mb-3">{{match_name}}</h2>
+                  
+                </div>
+                <img src="{{baseUrl}}/{{match_img}}" alt="Image">
+              </div>
+            </div>
+            
+              
+              
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+  <div class="footer py-4">
+    <div class="container-fluid">
+      <p>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+    </div>
+  </div>
+
+    
+
+    
+    
+  </div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'js/swiper.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+
+  <script src="{% static 'js/picturefill.min.js' %}"></script>
+  <script src="{% static 'js/lightgallery-all.min.js' %}"></script>
+  <script src="{% static 'js/jquery.mousewheel.min.js' %}"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+    
+  </body>
+</html>
